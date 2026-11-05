@@ -126,4 +126,4 @@ go vet ./...
 
 See [technical notes](docs/technical-notes.md) for contracts and implementation boundaries, and [testing](docs/testing.md) for automated checks and the live acceptance checklist.
 
-The [MIT license](LICENCE.md) applies to this example.
+The [MIT license](LICENCE.md) applies to this example. [Third-party notices](THIRD_PARTY_NOTICES.md) cover its dependency.
