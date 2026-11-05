@@ -1,0 +1,10 @@
+version: "2"
+
+linters:
+  default: none
+  enable:
+    - wsl_v5
+
+formatters:
+  enable:
+    - gofumpt

@@ -1,0 +1,10 @@
+**
+!go.mod
+!go.sum
+!LICENCE.md
+!THIRD_PARTY_NOTICES.md
+!cmd
+!cmd/**
+!internal
+!internal/**
+internal/**/*_test.go
