@@ -6,8 +6,8 @@ import (
 	"log/slog"
 	"testing"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/hubspot"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/textapi"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/hubspot"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/textapi"
 )
 
 type source struct {

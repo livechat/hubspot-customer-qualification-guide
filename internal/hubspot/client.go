@@ -7,9 +7,9 @@ import (
 	"net/url"
 	"strconv"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/identity"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/qualification"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/identity"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/qualification"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
 )
 
 const Property = "text_qualified_lead"

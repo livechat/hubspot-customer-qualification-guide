@@ -12,13 +12,13 @@ import (
 	"syscall"
 	"time"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/config"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/hubspot"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/importer"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/qualification"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/rtm"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/textapi"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/config"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/hubspot"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/importer"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/qualification"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/rtm"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/textapi"
 )
 
 func main() {

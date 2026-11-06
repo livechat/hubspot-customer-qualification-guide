@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/qualification"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/qualification"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
 )
 
 func TestPrimaryEmailAndUnchangedValueNeverWrite(t *testing.T) {

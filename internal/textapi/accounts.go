@@ -6,7 +6,7 @@ import (
 	"net/http"
 	"uuid"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
 )
 
 func OrganizationID(ctx context.Context, accounts *safehttp.Client) (string, error) {
