@@ -1,6 +1,6 @@
 # HubSpot contacts and Text lead qualification
 
-Imports your HubSpot contacts into Text as customers, then keeps a `text_qualified_lead` checkbox on each HubSpot contact in sync as Text qualifies or disqualifies them.
+Imports your HubSpot contacts into Text as customers, then updates a `text_qualified_lead` checkbox on a HubSpot contact when Text qualifies or disqualifies that customer while they're online.
 
 See the [full setup guide](https://www.text.com/docs/guides/sync-hubspot-qualified-leads).
 
@@ -29,12 +29,12 @@ Then start the qualification listener:
 
 ```shell
 docker compose up -d --build qualification
-curl --fail --include http://localhost:8080/readyz
+curl --fail --include http://localhost:8080/readyz    # use HOST_PORT if you changed it
 ```
 
 `/readyz` returns HTTP `204` once the service is connected to Text and `503` while it's disconnected. Follow the logs with `docker compose logs --follow qualification`, and stop the service with `docker compose down`.
 
-**The listener updates HubSpot only while it's running.** A qualification change that happens while it's stopped is lost — Text doesn't queue it, and the listener doesn't backfill on reconnect.
+**The listener covers online customers only, and only while it's running.** Text monitors customers who are online in the agent's teams, so an imported contact who never visits your site never produces an update. A change that happens while the listener is stopped is lost too — Text doesn't queue it, and the listener doesn't backfill on reconnect.
 
 ## Configuration
 
@@ -55,7 +55,7 @@ The URL variables exist so the test suite can point the service at a local mock 
 
 ## Development
 
-Requires Go 1.27. The only dependency is `github.com/coder/websocket`. Running the binary directly with `go run` reads the environment, so export the variables yourself; it doesn't load `.env`.
+Requires Go 1.27. The only dependency is `github.com/coder/websocket`. Running the binary directly with `go run` reads the environment, so export the variables yourself; it doesn't load `.env`. The binary binds the port in `PORT`, while `HOST_PORT` is only Compose's host-side mapping.
 
 ```shell
 go test ./...
