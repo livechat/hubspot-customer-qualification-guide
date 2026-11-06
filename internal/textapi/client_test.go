@@ -7,7 +7,7 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
 )
 
 func TestFindConsumesAllMatchingPages(t *testing.T) {

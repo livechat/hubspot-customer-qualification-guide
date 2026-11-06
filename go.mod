@@ -1,4 +1,4 @@
-module github.com/livechat/hubspot-customer-qualification-example
+module github.com/livechat/hubspot-customer-qualification-guide
 
 go 1.27.0
 

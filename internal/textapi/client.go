@@ -7,8 +7,8 @@ import (
 	"fmt"
 	"net/http"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/identity"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/identity"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
 )
 
 type Membership struct {

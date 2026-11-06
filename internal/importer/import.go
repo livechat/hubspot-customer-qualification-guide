@@ -7,9 +7,9 @@ import (
 	"strings"
 	"unicode/utf8"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/hubspot"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/identity"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/textapi"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/hubspot"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/identity"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/textapi"
 )
 
 type Source interface {

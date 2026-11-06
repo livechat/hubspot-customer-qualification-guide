@@ -3,7 +3,7 @@ package qualification
 import (
 	"context"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/textapi"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/textapi"
 )
 
 type Text interface {

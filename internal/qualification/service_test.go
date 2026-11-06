@@ -7,8 +7,8 @@ import (
 	"net/http/httptest"
 	"testing"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/textapi"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/textapi"
 )
 
 type textState struct {

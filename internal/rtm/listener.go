@@ -13,8 +13,8 @@ import (
 
 	"github.com/coder/websocket"
 	"github.com/coder/websocket/wsjson"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/qualification"
-	"github.com/livechat/hubspot-customer-qualification-example/internal/textapi"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/qualification"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/textapi"
 )
 
 type Syncer interface {

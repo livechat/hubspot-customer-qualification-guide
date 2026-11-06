@@ -9,7 +9,7 @@ import (
 	"testing"
 	"uuid"
 
-	"github.com/livechat/hubspot-customer-qualification-example/internal/safehttp"
+	"github.com/livechat/hubspot-customer-qualification-guide/internal/safehttp"
 )
 
 func TestOrganizationIDLookupAuthenticatesAndNormalizesUUID(t *testing.T) {
